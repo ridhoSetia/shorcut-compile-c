@@ -1,0 +1,29 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Compile c++",
+            "command": "g++",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ]
+        },
+        {
+            "label": "Run",
+            "type": "shell",
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "cls && \"${fileDirname}\\${fileBasenameNoExtension}.exe\""
+            ],           
+            "dependsOn": ["Compile c++"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}

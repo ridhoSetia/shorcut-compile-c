@@ -1,0 +1,25 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Compile c++",
+            "command": "g++",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out"
+            ]
+        },
+        {
+            "label": "Run",
+            "type": "shell",
+            "command": "clear && '${fileDirname}/${fileBasenameNoExtension}.out'",
+            "dependsOn": ["Compile c++"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
