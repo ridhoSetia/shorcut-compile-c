@@ -86,6 +86,7 @@ Sekarang dengan klik `ctrl + shift + b` otomatis akan melakukan compile sekaligu
 Berikut merupakan outputnya jika digunakan pada main.cpp.
 
 ![file-compile](img/file-hasil-compile.png)
+
 ![hasil](img/hasil.png)
 
 DM instagram saya jika ingin bertanya-tanya atau mengalami masalah dalam pengaturan<br>
